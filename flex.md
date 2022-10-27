@@ -287,3 +287,82 @@ app.Component('SvgIcon',SvgIcon)
 <svg-icon iconName="icon-huiyuan" />
 ```
 
+## 3.css3线性渐变
+
+为了创建 一个线性渐变，你必须至少定义两种颜色节点。颜色结点即你想要呈现平稳过渡的颜色。同时，你也可以设置一个起点和一个方向（或者一个角度）。
+
+**线性渐变-从上到下（默认情况下）**
+
+下面的实例演示了从顶部开始的线性渐变。起点是红色，慢慢过渡到绿色：
+
+从上到下的线性渐变：
+
+```css
+.box {
+	background:linear-gradient(red, green);
+}
+```
+
+**线性渐变-从左到右**
+
+下面的实例演示了从左到右的线性渐变。起点是红色，慢慢过渡到绿色：
+
+```css
+.box {
+	background:linear-gradient(to right, red , green);
+}
+```
+
+**使用角度**
+
+如果希望对渐变角度做更多的控制，您可以定义一个角度，来取代预定义的方向（向下、向上、向右、向左、向右下等等）。值 0deg 等于向上（to top）。值 90deg 等于向右（to right）。值 180deg 等于向下（to bottom）。
+
+带有指定的角度的线性渐变：
+
+```css
+.box {
+	background:linear-gradient(180deg, red , green);
+}
+```
+
+![img](https://img-blog.csdnimg.cn/20200421101616546.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQ2NTgyNDIx,size_16,color_FFFFFF,t_70)
+
+**左上到右下**
+
+```
+.box {
+  background-image: linear-gradient(to bottom right, red, yellow);
+}
+```
+
+
+
+## 4.css3 结构伪类选择器
+
+CSS中的结构伪类选择器是根据HTML页面元素之间的关系来定位HTML元素，从而减少对HTML 元素的id属性和class属性的依赖
+
+1. 作用：根据元素在根据HTML页面元素之间的关系查找元素
+2. 优势：减少对HTML 元素中类的依赖，有利于保持代码整洁
+
+**css3选择器nth-child(n)**
+
+nth-child(n),n可以是数字、关键词或公式。选择器匹配属于其父元素的第N个子元素，不论元素的类型。
+
+序号写法：li:nth-child(3){background:orange;} 把第3个LI的背景设为橙色
+
+倍数写法：li:nth-child(3n){background:orange;} 把第3，6，9…个LI的背景设为橙色
+
+序号写法：li:nth-child(3n+1){background:orange;} 把第1,4,7…个LI的背景设为橙色
+
+
+
+
+
+
+
+
+
+
+
+
+

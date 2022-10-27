@@ -111,7 +111,7 @@ Icon Font优缺点：首先它的体积比图片小很多，而且还具有更�
 
 2. 项目新建完成后，王项目里添加我们要项使用的图标，找到图标库，搜索一个想要的图标，然后添加到购物车；
 
-3. 添加到购物车后，将打包好的字体文件下载到本地添加到你的项目中。
+3. 添加到购物车后，将打包好的字体文件（icon font.ttf | iconfont.woff | iconfont.woff2 | iconfont.css）下载到本地添加到你的项目中。
 
 4. 将下载的文件夹解压，放到你的项目目录中，再在你的项目中引入iconfont.css文件。
 
@@ -121,8 +121,169 @@ Icon Font优缺点：首先它的体积比图片小很多，而且还具有更�
 
 项目中引入样式文件，直接link进来就行了
 
+**html引入**
+
 ```js
 <link rel='stylesheet' href='font/iconfont.css'
 ```
 
 如何在项目中使用字体图标呢，其实很简单。创建一个i标签或者apan标签，添加两个类名，一个固定类名是iconfont，另一个是你i想要的那个图标对应的类名。
+
+**vue3引入**
+
+```vue
+<template>
+  <div>
+    <i class="iconfont">&#xe641;</i>
+    <i class="iconfont icon-qiandao"></i>
+  </div>
+</template>
+
+<script setup></script>
+
+<style scoped>
+@import "@/assets/iconfont.css";
+</style>
+
+```
+
+**iconfont.css**
+
+```css
+@font-face {
+  font-family: "iconfont"; /* Project id 3732672 */
+  src: url("./fonts./iconfont.woff2?t=1666849095233") format("woff2"),
+    url("./fonts/iconfont.woff?t=1666849095233") format("woff"),
+    url("./fonts/iconfont.ttf?t=1666849095233") format("truetype");
+}
+
+[class^="icon-"],
+[class*="icon-"] {
+  font-family: "iconfont" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-qiandao:before {
+  content: "\e641";
+}
+
+```
+
+
+
+**小技巧：增加伪类扩大点击范围**
+
+```css
+<style>
+.icon-qiandao {
+  position: relative;
+  color: orange;
+}
+.icon-qiandao:after {
+  content: "";
+  position: absolute;
+  top: -15px;
+  left: -15px;
+  bottom: -15px;
+  right: -15px;
+}
+</style>
+```
+
+### 3.vite+vue3中使用iconfont的svg图标
+
+1、登录阿里图标库，把需要的字体图标加入到自己的项目中，
+
+阿里图标库地址：[iconfont-阿里巴巴矢量图标库](https://www.iconfont.cn/)
+
+2、进入图标添加的项目中，点击Symbol，然后点击暂无代码，点击生成：
+
+![img](https://img-blog.csdnimg.cn/683a493ce733409fae232968a5928a31.png)
+
+3、然后会生成一个链接，点击链接，进入后全选内容并复制：
+
+![img](https://img-blog.csdnimg.cn/50710186ad9c44c1b6e61f824ac28927.png)
+
+4、在项目中新建一个文件，将复制的内容放到新建的文件里面。
+
+ 
+
+![img](https://img-blog.csdnimg.cn/66642388ff6e4754aaa15acc314e589c.png)
+
+ 
+
+ 5、创建一个SvgIcon公共组件，代码如下：
+
+```TypeScript
+<template>
+  <svg :class="svgClass" aria-hidden="true">
+    <use :xlink:href="iconClassName" :fill="color" />
+  </svg>
+</template>
+
+<script setup lang="ts">
+  import { computed } from 'vue'
+  const props = defineProps({
+    iconName: {
+      type: String,
+      required: true,
+    },
+    className: {
+      type: String,
+      default: '',
+    },
+    color: {
+      type: String,
+      default: '#5c6b77',
+
+    },
+  })
+
+  // 图标在 iconfont 中的名字
+
+  const iconClassName = computed(() => {
+    return `#${props.iconName}`
+  })
+
+  // 给图标添加上类名
+
+  const svgClass = computed(() => {
+
+    if (props.className) {
+
+      return `svg-icon ${props.className}`
+
+    }
+    return 'svg-icon'
+  })
+</script>
+
+<style scoped>
+
+  .svg-icon {
+    width: 3em;
+    height: 3em;
+    position: relative;
+    fill: currentColor;
+    vertical-align: -2px;
+  }
+</style>
+```
+
+6、在main.ts中，注册为全局组件：
+
+```TypeScript
+import SvgIcon from '@/components/SvgIcon/index.vue'
+
+app.Component('SvgIcon',SvgIcon)
+```
+
+7、在页面中使用：
+
+```TypeScript
+<svg-icon iconName="icon-huiyuan" />
+```
+

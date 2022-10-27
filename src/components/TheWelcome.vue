@@ -3,7 +3,7 @@
     <div class="container">
       <header>
         <div class="search">
-          <i>签</i>
+          <i class="icon-qiandao"></i>
           <input type="text" placeholder="请输入商品名称" />
         </div>
       </header>
@@ -16,6 +16,7 @@
 <script setup lang="ts"></script>
 
 <style scoped>
+@import "@/assets/iconfont.css";
 .container {
   display: flex;
   flex-direction: column;
@@ -32,6 +33,7 @@
 .search i {
   color: #fff;
   margin-left: 0.5rem;
+  font-size: 2.5rem;
 }
 .search input {
   flex: 1;

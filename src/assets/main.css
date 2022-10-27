@@ -1,0 +1,21 @@
+@import "./base.css";
+
+a {
+  text-decoration: none;
+}
+ui li {
+  list-style: none;
+}
+i {
+  font-style: normal;
+}
+html {
+  font-size: 62.5%;
+  overflow: hidden;
+}
+body {
+  width: 100%;
+  max-width: 720px;
+  color: #333;
+  margin: auto;
+}

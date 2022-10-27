@@ -14,8 +14,8 @@
 <style scoped>
 .box1 {
   display: flex;
-  /* flex-direction: column; */
-  align-items: flex-end;
+  flex-direction: row;
+  align-items: flex-start;
   /* justify-content: center; */
   flex-wrap: wrap;
   background-color: cyan;

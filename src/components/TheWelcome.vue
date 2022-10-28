@@ -42,9 +42,48 @@
             <span>特色商品</span>
           </div>
         </div>
-
-        <div class="nav"></div>
-        <div class="content"></div>
+        <!-- 导航栏 -->
+        <div class="nav">
+          <ul>
+            <li>女装</li>
+            <li>男装</li>
+            <li>童装</li>
+            <li>鞋子</li>
+            <li>包包</li>
+            <li>玩具</li>
+          </ul>
+        </div>
+        <!-- 商品展示区 -->
+        <div class="content">
+          <div class="content-item">
+            <div class="content-img">
+              <img src="@/assets/images/content1.webp" alt="" />
+            </div>
+            <div class="content-title">标题</div>
+            <div class="content-box">单价 数量</div>
+          </div>
+          <div class="content-item">
+            <div class="content-img">
+              <img src="@/assets/images/content2.webp" alt="" />
+            </div>
+            <div class="content-title">标题</div>
+            <div class="content-box">单价 数量</div>
+          </div>
+          <div class="content-item">
+            <div class="content-img">
+              <img src="@/assets/images/content3.webp" alt="" />
+            </div>
+            <div class="content-title">标题</div>
+            <div class="content-box">单价 数量</div>
+          </div>
+          <div class="content-item">
+            <div class="content-img">
+              <img src="@/assets/images/content4.webp" alt="" />
+            </div>
+            <div class="content-title">标题</div>
+            <div class="content-box">单价 数量</div>
+          </div>
+        </div>
       </section>
       <!-- 底部部分 -->
       <footer></footer>
@@ -140,5 +179,34 @@ section {
 }
 .card .bg-color:nth-child(4) {
   background: linear-gradient(#d4bbf2, #b19bf5);
+}
+.nav ul {
+  display: flex;
+  text-align: center;
+}
+.nav ul li {
+  flex: 1;
+  margin: 0 3px;
+}
+/* 图片展示区 */
+.content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.content-item {
+  flex: 0 1 49%;
+  background-color: #fff;
+  box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.1);
+  margin: 5px 0;
+}
+.content-img {
+  width: 100%;
+  height: 20rem;
+}
+.content-img img {
+  max-width: 100%;
+  border-radius: 5px;
+  height: 100%;
 }
 </style>

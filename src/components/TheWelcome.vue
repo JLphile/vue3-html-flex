@@ -63,8 +63,8 @@
               <h5>雪纺连衣裙秋季装2021年早秋新款甜美连衣裙</h5>
             </div>
             <div class="content-box">
-              <b>￥239</b>已售出345件
-              <span></span>
+              <b>￥239</b>
+              <span>已售出345件</span>
             </div>
           </div>
           <div class="content-item">
@@ -74,7 +74,7 @@
             <div class="content-title">
               <h5>雪纺连衣裙秋季装2021年早秋新款甜美连衣裙</h5>
             </div>
-            <div class="content-box">单价 数量</div>
+            <div class="content-box"><b>￥239</b><span>已售出345件</span></div>
           </div>
           <div class="content-item">
             <div class="content-img">
@@ -83,7 +83,7 @@
             <div class="content-title">
               <h5>雪纺连衣裙秋季装2021年早秋新款甜美连衣裙</h5>
             </div>
-            <div class="content-box">单价 数量</div>
+            <div class="content-box"><b>￥239</b><span>已售出345件</span></div>
           </div>
           <div class="content-item">
             <div class="content-img">
@@ -92,12 +92,65 @@
             <div class="content-title">
               <h5>雪纺连衣裙秋季装2021年早秋新款甜美连衣裙</h5>
             </div>
-            <div class="content-box">单价 数量</div>
+            <div class="content-box"><b>￥239</b><span>已售出345件</span></div>
+          </div>
+          <div class="content-item">
+            <div class="content-img">
+              <img src="@/assets/images/content4.webp" alt="" />
+            </div>
+            <div class="content-title">
+              <h5>雪纺连衣裙秋季装2021年早秋新款甜美连衣裙</h5>
+            </div>
+            <div class="content-box"><b>￥239</b><span>已售出345件</span></div>
+          </div>
+          <div class="content-item">
+            <div class="content-img">
+              <img src="@/assets/images/content4.webp" alt="" />
+            </div>
+            <div class="content-title">
+              <h5>雪纺连衣裙秋季装2021年早秋新款甜美连衣裙</h5>
+            </div>
+            <div class="content-box"><b>￥239</b><span>已售出345件</span></div>
           </div>
         </div>
       </section>
       <!-- 底部部分 -->
-      <footer>footer</footer>
+      <footer>
+        <div class="footer">
+          <ul>
+            <li>
+              <a href="">
+                <i class="icon-shouye"></i>
+                <span>首页</span>
+              </a>
+            </li>
+            <li>
+              <a href="">
+                <i class="icon-fenlei"></i>
+                <span>分类</span>
+              </a>
+            </li>
+            <li>
+              <a class="select" href="">
+                <i class="icon--yuan"></i>
+                <span>9.9包邮</span>
+              </a>
+            </li>
+            <li>
+              <a href="">
+                <i class="icon-gouwuche"></i>
+                <span>购物车</span>
+              </a>
+            </li>
+            <li>
+              <a href="">
+                <i class="icon-wode"></i>
+                <span>我的</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </footer>
     </div>
   </div>
 </template>
@@ -110,7 +163,14 @@
   display: flex;
   flex-direction: column;
 }
+/* 头部 */
+header {
+  height: 5rem;
+}
 .search {
+  position: fixed;
+  z-index: 999;
+  width: 100%;
   max-width: 720px;
   background-color: #fb3950;
   border-radius: 0 0 1rem 1rem;
@@ -138,6 +198,7 @@ section {
   padding: 1rem;
   /* background-color: pink; */
 }
+/* 广告图 */
 .draw img {
   width: 100%;
   border-radius: 6rem;
@@ -207,13 +268,12 @@ section {
 }
 .content-item {
   flex: 0 1 49%;
-  background-color: pink;
   box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.1);
   margin: 5px 0;
 }
 .content-img {
   width: 100%;
-  height: 20rem;
+  height: auto;
 }
 .content-img img {
   max-width: 100%;
@@ -223,5 +283,50 @@ section {
 .content-title h5 {
   font-weight: 400;
   margin: 3px;
+}
+.content-box {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px 0;
+  padding: 0 5px;
+}
+.content-box b {
+  color: red;
+  font-size: 1.6rem;
+}
+.content-box span {
+  color: #999;
+}
+/* 页面底部 */
+footer {
+  height: 5.5rem;
+}
+.footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  max-width: 72rem;
+  height: 5.5rem;
+  background-color: #fff;
+  border-top: 1px solid #999;
+}
+.footer ul {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 100%;
+}
+.footer ul li {
+  flex: 1;
+  text-align: center;
+}
+.footer ul li span {
+  display: block;
+}
+.footer ul li i {
+  font-size: 2rem;
+}
+.footer .select {
+  color: red;
 }
 </style>

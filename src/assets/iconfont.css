@@ -1,8 +1,8 @@
 @font-face {
   font-family: "iconfont"; /* Project id 3732672 */
-  src: url("./fonts/iconfont.woff2?t=1666882446308") format("woff2"),
-    url("./fonts/iconfont.woff?t=1666882446308") format("woff"),
-    url("./fonts/iconfont.ttf?t=1666882446308") format("truetype");
+  src: url("./fonts/iconfont.woff2?t=1666966473994") format("woff2"),
+    url("./fonts/iconfont.woff?t=1666966473994") format("woff"),
+    url("./fonts/iconfont.ttf?t=1666966473994") format("truetype");
 }
 
 [class^="icon-"],
@@ -12,6 +12,46 @@
   font-style: normal;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+.icon--yuan:before {
+  content: "\e608";
+}
+
+.icon-99:before {
+  content: "\e6bf";
+}
+
+.icon-gouwuche:before {
+  content: "\e73d";
+}
+
+.icon-shouye:before {
+  content: "\e64f";
+}
+
+.icon-jinbi:before {
+  content: "\e64a";
+}
+
+.icon-gift:before {
+  content: "\e65e";
+}
+
+.icon-wode:before {
+  content: "\e8a0";
+}
+
+.icon-fenlei:before {
+  content: "\e62f";
+}
+
+.icon-shangpin:before {
+  content: "\e6a3";
+}
+
+.icon-youhuiquan:before {
+  content: "\e67b";
 }
 
 .icon-youhuijuan:before {

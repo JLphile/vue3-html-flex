@@ -1,6 +1,7 @@
 /* @import "./base.css"; */
 
 a {
+  color: #333;
   text-decoration: none;
 }
 ul {

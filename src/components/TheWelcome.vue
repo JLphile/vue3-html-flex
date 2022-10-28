@@ -59,34 +59,45 @@
             <div class="content-img">
               <img src="@/assets/images/content1.webp" alt="" />
             </div>
-            <div class="content-title">标题</div>
-            <div class="content-box">单价 数量</div>
+            <div class="content-title">
+              <h5>雪纺连衣裙秋季装2021年早秋新款甜美连衣裙</h5>
+            </div>
+            <div class="content-box">
+              <b>￥239</b>已售出345件
+              <span></span>
+            </div>
           </div>
           <div class="content-item">
             <div class="content-img">
               <img src="@/assets/images/content2.webp" alt="" />
             </div>
-            <div class="content-title">标题</div>
+            <div class="content-title">
+              <h5>雪纺连衣裙秋季装2021年早秋新款甜美连衣裙</h5>
+            </div>
             <div class="content-box">单价 数量</div>
           </div>
           <div class="content-item">
             <div class="content-img">
               <img src="@/assets/images/content3.webp" alt="" />
             </div>
-            <div class="content-title">标题</div>
+            <div class="content-title">
+              <h5>雪纺连衣裙秋季装2021年早秋新款甜美连衣裙</h5>
+            </div>
             <div class="content-box">单价 数量</div>
           </div>
           <div class="content-item">
             <div class="content-img">
               <img src="@/assets/images/content4.webp" alt="" />
             </div>
-            <div class="content-title">标题</div>
+            <div class="content-title">
+              <h5>雪纺连衣裙秋季装2021年早秋新款甜美连衣裙</h5>
+            </div>
             <div class="content-box">单价 数量</div>
           </div>
         </div>
       </section>
       <!-- 底部部分 -->
-      <footer></footer>
+      <footer>footer</footer>
     </div>
   </div>
 </template>
@@ -196,7 +207,7 @@ section {
 }
 .content-item {
   flex: 0 1 49%;
-  background-color: #fff;
+  background-color: pink;
   box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.1);
   margin: 5px 0;
 }
@@ -208,5 +219,9 @@ section {
   max-width: 100%;
   border-radius: 5px;
   height: 100%;
+}
+.content-title h5 {
+  font-weight: 400;
+  margin: 3px;
 }
 </style>

@@ -95,13 +95,11 @@ align-items：时作用于容器内的每一行在当前交叉轴的对齐位置
 
 align-content：设置容器内部所有行作为一个整体在垂直方向排列方式，针对多行作为一个整体在交叉轴上的排列，改属性对单行无效。
 
+## 2.字体图标 Icon Font
 
+字体图标显示的并不是具体的文字之类的，而是各种图标。因为他是字体，所以可以当成字体来用，只需要给出对应的字符而不需要通过测量背景图片位置那么麻烦。字体图标最大的好处，在于它不会变形且加载速度快。字体图标可以像文字一样，随意通过 css 来控制它的大小和颜色，对于建网站来说，非常方便。
 
-## 2.字体图标Icon Font
-
-字体图标显示的并不是具体的文字之类的，而是各种图标。因为他是字体，所以可以当成字体来用，只需要给出对应的字符而不需要通过测量背景图片位置那么麻烦。字体图标最大的好处，在于它不会变形且加载速度快。字体图标可以像文字一样，随意通过css来控制它的大小和颜色，对于建网站来说，非常方便。
-
-Icon Font优缺点：首先它的体积比图片小很多，而且还具有更好的可维护性（因为是矢量，所以拉伸不变形；可以随意的改变颜色、产生阴影、透明效果等等）不需要下载一个图像，可以减少HTTP请求。当然，Icon Font也是有缺点的，由于是字体，支持简单的颜色，多种颜色兼容性不好。
+Icon Font 优缺点：首先它的体积比图片小很多，而且还具有更好的可维护性（因为是矢量，所以拉伸不变形；可以随意的改变颜色、产生阴影、透明效果等等）不需要下载一个图像，可以减少 HTTP 请求。当然，Icon Font 也是有缺点的，由于是字体，支持简单的颜色，多种颜色兼容性不好。
 
 ### **1.下载兼容字体包**
 
@@ -113,23 +111,21 @@ Icon Font优缺点：首先它的体积比图片小很多，而且还具有更�
 
 3. 添加到购物车后，将打包好的字体文件（icon font.ttf | iconfont.woff | iconfont.woff2 | iconfont.css）下载到本地添加到你的项目中。
 
-4. 将下载的文件夹解压，放到你的项目目录中，再在你的项目中引入iconfont.css文件。
+4. 将下载的文件夹解压，放到你的项目目录中，再在你的项目中引入 iconfont.css 文件。
 
-   
+### 2.字体图标引入到 HTML
 
-### 2.字体图标引入到HTML
+项目中引入样式文件，直接 link 进来就行了
 
-项目中引入样式文件，直接link进来就行了
-
-**html引入**
+**html 引入**
 
 ```js
 <link rel='stylesheet' href='font/iconfont.css'
 ```
 
-如何在项目中使用字体图标呢，其实很简单。创建一个i标签或者apan标签，添加两个类名，一个固定类名是iconfont，另一个是你i想要的那个图标对应的类名。
+如何在项目中使用字体图标呢，其实很简单。创建一个 i 标签或者 span 标签，添加两个类名，一个固定类名是 iconfont，另一个是你 i 想要的那个图标对应的类名。
 
-**vue3引入**
+**vue3 引入**
 
 ```vue
 <template>
@@ -144,7 +140,6 @@ Icon Font优缺点：首先它的体积比图片小很多，而且还具有更�
 <style scoped>
 @import "@/assets/iconfont.css";
 </style>
-
 ```
 
 **iconfont.css**
@@ -152,8 +147,8 @@ Icon Font优缺点：首先它的体积比图片小很多，而且还具有更�
 ```css
 @font-face {
   font-family: "iconfont"; /* Project id 3732672 */
-  src: url("./fonts./iconfont.woff2?t=1666849095233") format("woff2"),
-    url("./fonts/iconfont.woff?t=1666849095233") format("woff"),
+  src: url("./fonts./iconfont.woff2?t=1666849095233") format("woff2"), url("./fonts/iconfont.woff?t=1666849095233")
+      format("woff"),
     url("./fonts/iconfont.ttf?t=1666849095233") format("truetype");
 }
 
@@ -169,10 +164,7 @@ Icon Font优缺点：首先它的体积比图片小很多，而且还具有更�
 .icon-qiandao:before {
   content: "\e641";
 }
-
 ```
-
-
 
 **小技巧：增加伪类扩大点击范围**
 
@@ -193,13 +185,13 @@ Icon Font优缺点：首先它的体积比图片小很多，而且还具有更�
 </style>
 ```
 
-### 3.vite+vue3中使用iconfont的svg图标
+### 3.vite+vue3 中使用 iconfont 的 svg 图标
 
 1、登录阿里图标库，把需要的字体图标加入到自己的项目中，
 
 阿里图标库地址：[iconfont-阿里巴巴矢量图标库](https://www.iconfont.cn/)
 
-2、进入图标添加的项目中，点击Symbol，然后点击暂无代码，点击生成：
+2、进入图标添加的项目中，点击 Symbol，然后点击暂无代码，点击生成：
 
 ![img](https://img-blog.csdnimg.cn/683a493ce733409fae232968a5928a31.png)
 
@@ -209,13 +201,9 @@ Icon Font优缺点：首先它的体积比图片小很多，而且还具有更�
 
 4、在项目中新建一个文件，将复制的内容放到新建的文件里面。
 
- 
-
 ![img](https://img-blog.csdnimg.cn/66642388ff6e4754aaa15acc314e589c.png)
 
- 
-
- 5、创建一个SvgIcon公共组件，代码如下：
+5、创建一个 SvgIcon 公共组件，代码如下：
 
 ```TypeScript
 <template>
@@ -273,7 +261,7 @@ Icon Font优缺点：首先它的体积比图片小很多，而且还具有更�
 </style>
 ```
 
-6、在main.ts中，注册为全局组件：
+6、在 main.ts 中，注册为全局组件：
 
 ```TypeScript
 import SvgIcon from '@/components/SvgIcon/index.vue'
@@ -287,7 +275,7 @@ app.Component('SvgIcon',SvgIcon)
 <svg-icon iconName="icon-huiyuan" />
 ```
 
-## 3.css3线性渐变
+## 3.css3 线性渐变
 
 为了创建 一个线性渐变，你必须至少定义两种颜色节点。颜色结点即你想要呈现平稳过渡的颜色。同时，你也可以设置一个起点和一个方向（或者一个角度）。
 
@@ -299,7 +287,7 @@ app.Component('SvgIcon',SvgIcon)
 
 ```css
 .box {
-	background:linear-gradient(red, green);
+  background: linear-gradient(red, green);
 }
 ```
 
@@ -309,7 +297,7 @@ app.Component('SvgIcon',SvgIcon)
 
 ```css
 .box {
-	background:linear-gradient(to right, red , green);
+  background: linear-gradient(to right, red, green);
 }
 ```
 
@@ -321,7 +309,7 @@ app.Component('SvgIcon',SvgIcon)
 
 ```css
 .box {
-	background:linear-gradient(180deg, red , green);
+  background: linear-gradient(180deg, red, green);
 }
 ```
 
@@ -335,34 +323,19 @@ app.Component('SvgIcon',SvgIcon)
 }
 ```
 
-
-
 ## 4.css3 结构伪类选择器
 
-CSS中的结构伪类选择器是根据HTML页面元素之间的关系来定位HTML元素，从而减少对HTML 元素的id属性和class属性的依赖
+CSS 中的结构伪类选择器是根据 HTML 页面元素之间的关系来定位 HTML 元素，从而减少对 HTML 元素的 id 属性和 class 属性的依赖
 
-1. 作用：根据元素在根据HTML页面元素之间的关系查找元素
-2. 优势：减少对HTML 元素中类的依赖，有利于保持代码整洁
+1. 作用：根据元素在根据 HTML 页面元素之间的关系查找元素
+2. 优势：减少对 HTML 元素中类的依赖，有利于保持代码整洁
 
-**css3选择器nth-child(n)**
+**css3 选择器 nth-child(n)**
 
-nth-child(n),n可以是数字、关键词或公式。选择器匹配属于其父元素的第N个子元素，不论元素的类型。
+nth-child(n),n 可以是数字、关键词或公式。选择器匹配属于其父元素的第 N 个子元素，不论元素的类型。
 
-序号写法：li:nth-child(3){background:orange;} 把第3个LI的背景设为橙色
+序号写法：li:nth-child(3){background:orange;} 把第 3 个 LI 的背景设为橙色
 
-倍数写法：li:nth-child(3n){background:orange;} 把第3，6，9…个LI的背景设为橙色
+倍数写法：li:nth-child(3n){background:orange;} 把第 3，6，9…个 LI 的背景设为橙色
 
-序号写法：li:nth-child(3n+1){background:orange;} 把第1,4,7…个LI的背景设为橙色
-
-
-
-
-
-
-
-
-
-
-
-
-
+序号写法：li:nth-child(3n+1){background:orange;} 把第 1,4,7…个 LI 的背景设为橙色

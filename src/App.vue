@@ -1,15 +1,15 @@
 <template>
   <div>
     <!-- <HelloWorld /> -->
-    <TheWelcome />
-    <!-- <WelcomeItem /> -->
+    <!-- <ShoppingMall /> -->
+    <WelcomeShopping />
   </div>
 </template>
 
 <script setup lang="ts">
 // import HelloWorld from "./components/HelloWorld.vue";
-import TheWelcome from "./components/TheWelcome.vue";
-// import WelcomeItem from "./components/WelcomeItem.vue";
+// import ShoppingMall from "./components/ShoppingMall.vue";
+import WelcomeShopping from "./components/WelcomeShopping.vue";
 </script>
 
 <style scoped></style>

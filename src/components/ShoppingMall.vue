@@ -158,7 +158,6 @@
 <script setup lang="ts"></script>
 
 <style scoped>
-@import "@/assets/iconfont.css";
 .container {
   display: flex;
   flex-direction: column;

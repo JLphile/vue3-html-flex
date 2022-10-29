@@ -162,14 +162,16 @@
 .container {
   display: flex;
   flex-direction: column;
+  /* 用来固定头部和底部 */
+  height: 100vh;
 }
 /* 头部 */
 header {
   height: 5rem;
 }
 .search {
-  position: fixed;
-  z-index: 999;
+  /* position: fixed; */
+  /* z-index: 999; */
   width: 100%;
   max-width: 720px;
   background-color: #fb3950;
@@ -196,7 +198,9 @@ header {
 /* 中间部分开始 */
 section {
   padding: 1rem;
-  /* background-color: pink; */
+  /* 用来固定头部和底部 */
+  flex: 1;
+  overflow-y: scroll;
 }
 /* 广告图 */
 .draw img {
@@ -302,8 +306,8 @@ footer {
   height: 5.5rem;
 }
 .footer {
-  position: fixed;
-  bottom: 0;
+  /* position: fixed; */
+  /* bottom: 0; */
   width: 100%;
   max-width: 72rem;
   height: 5.5rem;

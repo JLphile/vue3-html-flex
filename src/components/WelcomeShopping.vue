@@ -118,7 +118,40 @@
       </div>
     </div>
     <!-- 商品展示区 -->
-    <div class="index-main"></div>
+    <div class="index-main">
+      <ul>
+        <li>
+          <a href="#" class="index-main-item">
+            <div class="more-img">
+              <img src="@/assets/images/content1.webp" alt="" />
+            </div>
+            <h4>【金龙鱼】长粒香东北大米</h4>
+            <p>提升口感，润滑鲜亮</p>
+            <div class="more-info">
+              <i>￥</i>
+              <b>23.9</b>
+              <s>￥44.9</s>
+            </div>
+          </a>
+          <i class="icon-shouye"></i>
+        </li>
+        <li>
+          <a href="#" class="index-main-item">
+            <div class="more-img">
+              <img src="@/assets/images/content1.webp" alt="" />
+            </div>
+            <h4>【金龙鱼】长粒香东北大米</h4>
+            <p>提升口感，润滑鲜亮</p>
+            <div class="more-info">
+              <i>￥</i>
+              <b>23.9</b>
+              <s>￥44.9</s>
+            </div>
+          </a>
+          <i class="icon-shouye"></i>
+        </li>
+      </ul>
+    </div>
     <!-- 页面底部 -->
     <div class="footer"></div>
   </div>
@@ -302,5 +335,27 @@
   position: absolute;
   right: 0;
   bottom: 4px;
+}
+/* 商品展示区 */
+.index-main {
+  background-color: #f7f8f9;
+  width: 100%;
+}
+.index-main ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.index-main ul li {
+  flex: 0 1 48%;
+  background-color: #fff;
+  margin: 3px 1px;
+}
+.more-img {
+  text-align: center;
+}
+.more-img img {
+  max-width: 100%;
+  height: auto;
 }
 </style>

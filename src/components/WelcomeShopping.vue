@@ -135,8 +135,9 @@
           </a>
           <i class="icon-shouye iconcar"></i>
         </li>
-        <li>
-          <a href="#" class="index-main-item">
+        <li class="out">
+          <span>已售罄</span>
+          <div href="#" class="index-main-item">
             <div class="more-img">
               <img src="@/assets/images/content2.webp" alt="" />
             </div>
@@ -147,7 +148,54 @@
               <b class="b-color">23.9</b>
               <s class="s-color">￥44.9</s>
             </div>
+          </div>
+          <i class="icon-shouye iconcar"></i>
+        </li>
+        <li>
+          <a href="#" class="index-main-item">
+            <div class="more-img">
+              <img src="@/assets/images/content3.webp" alt="" />
+            </div>
+            <h4>【金龙鱼】长粒香东北大米</h4>
+            <p>提升口感，润滑鲜亮</p>
+            <div class="more-info">
+              <i class="i-color">￥</i>
+              <b class="b-color">23.9</b>
+              <s class="s-color">￥44.9</s>
+            </div>
           </a>
+          <i class="icon-shouye iconcar"></i>
+          <u>1</u>
+        </li>
+        <li>
+          <a href="#" class="index-main-item">
+            <div class="more-img">
+              <img src="@/assets/images/content1.webp" alt="" />
+            </div>
+            <h4>【金龙鱼】长粒香东北大米</h4>
+            <p>提升口感，润滑鲜亮</p>
+            <div class="more-info">
+              <i class="i-color">￥</i>
+              <b class="b-color">23.9</b>
+              <s class="s-color">￥44.9</s>
+            </div>
+          </a>
+          <i class="icon-shouye iconcar"></i>
+        </li>
+        <li class="out">
+          <span>已售罄</span>
+          <div href="#" class="index-main-item">
+            <div class="more-img">
+              <img src="@/assets/images/content2.webp" alt="" />
+            </div>
+            <h4>【金龙鱼】长粒香东北大米</h4>
+            <p>提升口感，润滑鲜亮</p>
+            <div class="more-info">
+              <i class="i-color">￥</i>
+              <b class="b-color">23.9</b>
+              <s class="s-color">￥44.9</s>
+            </div>
+          </div>
           <i class="icon-shouye iconcar"></i>
         </li>
         <li>
@@ -384,7 +432,7 @@
   height: 25px;
   margin: 10px 0;
 }
-.iconcar {
+.index-main .iconcar {
   color: #fff;
   background-color: #fe4557;
   border-radius: 50%;
@@ -393,7 +441,7 @@
   right: 10px;
   bottom: 2px;
 }
-.index-main ul u {
+.index-main li > u {
   position: absolute;
   right: 5px;
   bottom: 17px;
@@ -404,5 +452,17 @@
   border-radius: 50%;
   padding: 0 3px;
   transform: scale(0.7);
+}
+.index-main .out > i {
+  background-color: #ccc;
+}
+.index-main .out > span {
+  position: absolute;
+  top: 20%;
+  left: 30%;
+  background-color: rgba(0, 0, 0, 0.4);
+  border-radius: 50%;
+  padding: 13% 10%;
+  color: #fff;
 }
 </style>

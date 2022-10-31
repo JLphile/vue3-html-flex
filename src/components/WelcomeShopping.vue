@@ -214,10 +214,57 @@
           <i class="icon-shouye iconcar"></i>
           <u>1</u>
         </li>
+        <li>
+          <a href="#" class="index-main-item">
+            <div class="more-img">
+              <img src="@/assets/images/content3.webp" alt="" />
+            </div>
+            <h4>【金龙鱼】长粒香东北大米</h4>
+            <p>提升口感，润滑鲜亮</p>
+            <div class="more-info">
+              <i class="i-color">￥</i>
+              <b class="b-color">23.9</b>
+              <s class="s-color">￥44.9</s>
+            </div>
+          </a>
+          <i class="icon-shouye iconcar"></i>
+          <u>1</u>
+        </li>
       </ul>
     </div>
     <!-- 页面底部 -->
-    <div class="footer"></div>
+    <div class="placeholder"></div>
+    <div class="footer">
+      <div class="footer-lists">
+        <ul>
+          <li>
+            <a href="#" class="selected">
+              <i class="icon-shouye"></i>
+              <p>首页</p>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="icon-fenlei"></i>
+              <p>分类</p>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="icon-shouye"></i>
+              <p>购物车</p>
+              <b>2</b>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="icon-wode"></i>
+              <p>我的</p>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
   </div>
 </template>
 
@@ -404,6 +451,7 @@
 .index-main {
   background-color: #f7f8f9;
   width: 100%;
+  /* margin-bottom: 55px; */
 }
 .index-main ul {
   display: flex;
@@ -464,5 +512,53 @@
   border-radius: 50%;
   padding: 13% 10%;
   color: #fff;
+}
+/* 底部 */
+.placeholder {
+  height: 55px;
+}
+.footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  height: 55px;
+  width: 100%;
+}
+.footer-lists {
+  height: 55px;
+  max-width: 720px;
+  background-color: #f3f3f3;
+  margin: auto;
+  border-top: 1px solid #d5d5d5;
+}
+.footer ul {
+  display: flex;
+  height: 55px;
+  text-align: center;
+  align-items: center;
+}
+.footer ul li {
+  flex: 0 1 25%;
+}
+.footer ul i {
+  font-size: 24px;
+}
+.selected {
+  color: red;
+}
+.footer-lists li a {
+  position: relative;
+}
+.footer-lists li b {
+  position: absolute;
+  top: -13px;
+  left: 13px;
+  right: auto;
+  background-color: #fe4557;
+  color: #fff;
+  border-radius: 50%;
+  padding: 1px 5px;
+  transform: scale(0.8);
+  font-weight: 400;
 }
 </style>

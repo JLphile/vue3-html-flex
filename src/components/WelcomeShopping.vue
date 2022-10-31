@@ -109,9 +109,9 @@
           <h5><a href="#">农家养土鸡蛋现捡新鲜谷物虫草柴鸡蛋盒装 30枚装</a></h5>
           <p>秒杀价</p>
           <div class="column-list">
-            <i>￥</i>
-            <b>23.9</b>
-            <s>￥44.9</s>
+            <i class="i-color">￥</i>
+            <b class="b-color">23.9</b>
+            <s class="s-color">￥44.9</s>
             <a href="#">立即抢购</a>
           </div>
         </div>
@@ -128,27 +128,43 @@
             <h4>【金龙鱼】长粒香东北大米</h4>
             <p>提升口感，润滑鲜亮</p>
             <div class="more-info">
-              <i>￥</i>
-              <b>23.9</b>
-              <s>￥44.9</s>
+              <i class="i-color">￥</i>
+              <b class="b-color">23.9</b>
+              <s class="s-color">￥44.9</s>
             </div>
           </a>
-          <i class="icon-shouye"></i>
+          <i class="icon-shouye iconcar"></i>
         </li>
         <li>
           <a href="#" class="index-main-item">
             <div class="more-img">
-              <img src="@/assets/images/content1.webp" alt="" />
+              <img src="@/assets/images/content2.webp" alt="" />
             </div>
             <h4>【金龙鱼】长粒香东北大米</h4>
             <p>提升口感，润滑鲜亮</p>
             <div class="more-info">
-              <i>￥</i>
-              <b>23.9</b>
-              <s>￥44.9</s>
+              <i class="i-color">￥</i>
+              <b class="b-color">23.9</b>
+              <s class="s-color">￥44.9</s>
             </div>
           </a>
-          <i class="icon-shouye"></i>
+          <i class="icon-shouye iconcar"></i>
+        </li>
+        <li>
+          <a href="#" class="index-main-item">
+            <div class="more-img">
+              <img src="@/assets/images/content3.webp" alt="" />
+            </div>
+            <h4>【金龙鱼】长粒香东北大米</h4>
+            <p>提升口感，润滑鲜亮</p>
+            <div class="more-info">
+              <i class="i-color">￥</i>
+              <b class="b-color">23.9</b>
+              <s class="s-color">￥44.9</s>
+            </div>
+          </a>
+          <i class="icon-shouye iconcar"></i>
+          <u>1</u>
         </li>
       </ul>
     </div>
@@ -313,16 +329,16 @@
 .column-list {
   position: relative;
 }
-.column-list i {
+.i-color {
   font-style: normal;
   color: #fe4557;
 }
-.column-list b {
+.b-color {
   color: #fe4557;
   font-size: 18px;
   margin-left: -3px;
 }
-.column-list s {
+.s-color {
   color: #999;
 }
 .column-list a {
@@ -350,6 +366,7 @@
   flex: 0 1 48%;
   background-color: #fff;
   margin: 3px 1px;
+  position: relative;
 }
 .more-img {
   text-align: center;
@@ -357,5 +374,35 @@
 .more-img img {
   max-width: 100%;
   height: auto;
+}
+.index-main-item h4 {
+  font-weight: 700;
+  height: 25px;
+}
+.index-main-item p {
+  color: #999;
+  height: 25px;
+  margin: 10px 0;
+}
+.iconcar {
+  color: #fff;
+  background-color: #fe4557;
+  border-radius: 50%;
+  padding: 5px;
+  position: absolute;
+  right: 10px;
+  bottom: 2px;
+}
+.index-main ul u {
+  position: absolute;
+  right: 5px;
+  bottom: 17px;
+  text-decoration: none;
+  color: #fe4557;
+  border: 2px solid #fe4557;
+  background-color: #fff;
+  border-radius: 50%;
+  padding: 0 3px;
+  transform: scale(0.7);
 }
 </style>

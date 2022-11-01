@@ -1,13 +1,21 @@
 <template>
   <div class="home-view">
     <div>
-      <CircleLoading></CircleLoading>
+      <CircleLoading />
+    </div>
+    <div>
+      <BubbleLoading />
+    </div>
+    <div>
+      <TeacupLoading />
     </div>
   </div>
 </template>
 
 <script setup lang="ts">
 import CircleLoading from "@/components/CircleLoading.vue";
+import BubbleLoading from "@/components/BubbleLoading.vue";
+import TeacupLoading from "@/components/TeacupLoading.vue";
 </script>
 
 <style scoped>

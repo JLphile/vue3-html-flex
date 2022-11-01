@@ -9,6 +9,9 @@
     <div>
       <TeacupLoading />
     </div>
+    <div>
+      <PlayButton />
+    </div>
   </div>
 </template>
 
@@ -16,6 +19,7 @@
 import CircleLoading from "@/components/CircleLoading.vue";
 import BubbleLoading from "@/components/BubbleLoading.vue";
 import TeacupLoading from "@/components/TeacupLoading.vue";
+import PlayButton from "@/components/PlayButton.vue";
 </script>
 
 <style scoped>

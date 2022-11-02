@@ -158,6 +158,9 @@
 <script setup lang="ts"></script>
 
 <style scoped>
+*{
+  box-sizing: border-box;
+}
 .container {
   display: flex;
   flex-direction: column;

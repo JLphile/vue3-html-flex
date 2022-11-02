@@ -15,6 +15,7 @@
     <div>
       <FloatingButton />
     </div>
+    <div><ProgressBar /></div>
   </div>
 </template>
 
@@ -24,6 +25,7 @@ import BubbleLoading from "@/components/BubbleLoading.vue";
 import TeacupLoading from "@/components/TeacupLoading.vue";
 import PlayButton from "@/components/PlayButton.vue";
 import FloatingButton from "@/components/FloatingButton.vue";
+import ProgressBar from "@/components/ProgressBar.vue";
 </script>
 
 <style scoped>

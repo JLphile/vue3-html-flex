@@ -161,6 +161,9 @@
 *{
   box-sizing: border-box;
 }
+html {
+  font-size: 62.5%;
+}
 .container {
   display: flex;
   flex-direction: column;

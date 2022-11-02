@@ -17,6 +17,7 @@
     </div>
     <div><ProgressBar /></div>
     <div><BadgeVue /></div>
+    <div><LandMark /></div>
   </div>
 </template>
 
@@ -28,6 +29,7 @@ import PlayButton from "@/components/PlayButton.vue";
 import FloatingButton from "@/components/FloatingButton.vue";
 import ProgressBar from "@/components/ProgressBar.vue";
 import BadgeVue from '@/components/BadgeVue.vue'
+import LandMark from '@/components/LandMark.vue'
 </script>
 
 <style scoped>

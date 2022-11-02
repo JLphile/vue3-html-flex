@@ -16,6 +16,7 @@
       <FloatingButton />
     </div>
     <div><ProgressBar /></div>
+    <div><BadgeVue /></div>
   </div>
 </template>
 
@@ -26,6 +27,7 @@ import TeacupLoading from "@/components/TeacupLoading.vue";
 import PlayButton from "@/components/PlayButton.vue";
 import FloatingButton from "@/components/FloatingButton.vue";
 import ProgressBar from "@/components/ProgressBar.vue";
+import BadgeVue from '@/components/BadgeVue.vue'
 </script>
 
 <style scoped>

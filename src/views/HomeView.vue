@@ -19,6 +19,8 @@
     <div><Heart /></div>
 
     <div><MailVue /></div>
+
+    <div><CalendarVue /></div>
   </div>
 </template>
 
@@ -33,6 +35,7 @@ import BadgeVue from "@/components/BadgeVue.vue";
 import LandMark from "@/components/LandMark.vue";
 import Heart from "@/components/HeartVue.vue";
 import MailVue from "@/components/MailVue.vue";
+import CalendarVue from "@/components/CalendarVue.vue";
 </script>
 
 <style scoped>

@@ -158,15 +158,14 @@
 <script setup lang="ts"></script>
 
 <style scoped>
-*{
-  box-sizing: border-box;
-}
+
 html {
   font-size: 62.5%;
 }
 .container {
   display: flex;
   flex-direction: column;
+  box-sizing: border-box;
   /* 用来固定头部和底部 */
   height: 100vh;
 }

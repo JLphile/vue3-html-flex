@@ -17,6 +17,8 @@
     <div><LandMark /></div>
 
     <div><Heart /></div>
+
+    <div><MailVue /></div>
   </div>
 </template>
 
@@ -30,6 +32,7 @@ import ProgressBar from "@/components/ProgressBar.vue";
 import BadgeVue from "@/components/BadgeVue.vue";
 import LandMark from "@/components/LandMark.vue";
 import Heart from "@/components/HeartVue.vue";
+import MailVue from "@/components/MailVue.vue";
 </script>
 
 <style scoped>

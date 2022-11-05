@@ -3,7 +3,8 @@
     <!-- <HelloWorld /> -->
     <!-- <ShoppingMall /> -->
     <!-- <WelcomeShopping /> -->
-    <HomeView />
+    <!-- <HomeView /> -->
+    <ProductDetails />
   </div>
 </template>
 
@@ -11,7 +12,8 @@
 // import HelloWorld from "./components/HelloWorld.vue";
 // import ShoppingMall from "./components/ShoppingMall.vue";
 // import WelcomeShopping from "./components/WelcomeShopping.vue";
-import HomeView from "./views/HomeView.vue";
+// import HomeView from "./views/HomeView.vue";
+import ProductDetails from './views/ProductDetails.vue';
 </script>
 
 <style scoped></style>

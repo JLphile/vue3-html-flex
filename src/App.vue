@@ -10,8 +10,8 @@
 
 <script setup lang="ts">
 // import HelloWorld from "./components/HelloWorld.vue";
-// import ShoppingMall from "./components/ShoppingMall.vue";
-// import WelcomeShopping from "./components/WelcomeShopping.vue";
+// import ShoppingMall from "./views/ShoppingMall.vue";
+// import WelcomeShopping from "./views/WelcomeShopping.vue";
 // import HomeView from "./views/HomeView.vue";
 import ProductDetails from './views/ProductDetails.vue';
 </script>

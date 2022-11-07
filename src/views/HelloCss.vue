@@ -1,5 +1,5 @@
 <template>
-  <div class="box1">
+  <div id="box1">
     <div>a</div>
     <div>b</div>
     <div>c</div>
@@ -12,17 +12,17 @@
 <script setup lang="ts"></script>
 
 <style scoped>
-.box1 {
+#box1 {
   display: flex;
   flex-direction: row;
   align-items: flex-start;
-  /* justify-content: center; */
+  justify-content: center;
   flex-wrap: wrap;
   background-color: cyan;
   width: 600px;
   height: 600px;
 }
-.box1 div {
+#box1 div {
   width: 100px;
   height: 100px;
   background-color: pink;
